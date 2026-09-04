@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bresenham em WebGL2</title>
+    <style>
+body {
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  height: 100vh; background-color: #222; color: white; font-family: sans-serif; margin: 0;
+}
+        canvas {
+          border: 2px solid #555; background-color: #111; cursor: crosshair;
+        }
+        #instrucoes { margin-bottom: 10px; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div id="instrucoes">
+      <strong>Clique 1:</strong> Ponto Inicial | <strong>Clique 2:</strong> Ponto Final<br>
+      <strong>Teclas 0 a 9:</strong> Mudar a cor da linha
+    </div>
+
+    <canvas id="glCanvas" width="500" height="500"></canvas>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>

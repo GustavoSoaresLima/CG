@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bresenham 2: Retas e Triângulos</title>
+    <style>
+body {
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  height: 100vh; background-color: #222; color: white; font-family: sans-serif; margin: 0;
+}
+        canvas { border: 2px solid #555; background-color: #111; cursor: crosshair; }
+        #instrucoes { margin-bottom: 10px; text-align: center; line-height: 1.5; }
+        .tecla { background: #444; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+    </style>
+  </head>
+  <body>
+    <div id="instrucoes">
+      Modo Atual: <strong id="textoModo" style="color: #4CAF50;">RETA (2 Cliques)</strong><br>
+      Mudar Modo: <span class="tecla">R</span> (Reta) | <span class="tecla">T</span> (Triângulo)<br>
+      Mudar Cor: <span class="tecla">0</span> a <span class="tecla">9</span>
+    </div>
+
+    <canvas id="glCanvas" width="500" height="500"></canvas>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
