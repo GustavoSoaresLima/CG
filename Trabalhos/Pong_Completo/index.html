@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong - Incompleto</title>
+</head>
+
+<body>
+
+    <style>
+    /* Centraliza tudo na tela */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #222;
+        margin: 0;
+        position: relative; /* Necessário para o placar flutuar */
+    }
+    
+    /* O visual do placar flutuante */
+    #placar {
+        position: absolute;
+        top: 30px; /* Distância do topo da tela */
+        color: white;
+        font-size: 60px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        z-index: 10; /* Garante que o texto fique por cima do canvas */
+    }
+</style>
+
+<!-- O Placar -->
+<div id="placar">
+    <span id="pontosEsq">0</span>
+    <span style="margin: 0 40px;">:</span>
+    <span id="pontosDir">0</span>
+</div>
+
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <script src="m3.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
